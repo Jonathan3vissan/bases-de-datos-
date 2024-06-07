@@ -40,3 +40,8 @@ INSERT INTO nombre de la tabla (nombre)
 ALTER TABLE nombre de la tabla 
 ADD COLUMN noombre de la columna que quiero agregar INT DEFAULT 0;
 
+
+
+/*RENOBRA UNA COLUMNA DE MI MI TABALA */
+ALTER TABLE cliente RENAME  COLUMN PAGO TO FOMRA_DE_PAGO
+
