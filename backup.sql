@@ -53,14 +53,14 @@ value ('esteban',456789132,);
  value ('estela',789798987,'bono');
  
  insert into cliente (nombre,telefono,pago)
- value ('estela',789798987,'bono');
- 
- insert into cliente (nombre,telefono,pago)
  value ('hilda',789790007,'mercado pago');
 
 /*veo los registro de la tabla*/
 SELECT * from cliente
 
+
+/*agrega una columna de estadia despues de telefono y antes de pago*/ 
+ALTER cliente add estadia int not null default 1 after telefono;
 
 
 

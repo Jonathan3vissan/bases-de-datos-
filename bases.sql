@@ -45,3 +45,11 @@ ADD COLUMN noombre de la columna que quiero agregar INT DEFAULT 0;
 /*RENOBRA UNA COLUMNA DE MI MI TABALA */
 ALTER TABLE cliente RENAME  COLUMN PAGO TO FOMRA_DE_PAGO
 
+/*agregar una columna a im tabla de cliente 
+(agrege una coluimna despues de telefono y antes de forma de pago)*/
+ alter table cliente add estadia int not null default 1 after telefono;
+
+
+/*modifica el registro en una tabla y especifica la colmuna*/
+ update cliente set estadia =12 where id=1;
+
