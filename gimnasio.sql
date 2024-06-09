@@ -52,5 +52,68 @@ VALUES ("florencia petat", "1989/08/23",true);
 INSERT INTO clientes (nombre , fecha_de_naciemiento,apto_fisico)
 VALUES ("gabriel flores", "2005/08/15",true);
 
+
+ALTER TABLE clientes
+ADD COLUMN ingresos_id INT;
+
 SELECT * FROM clientes;
 
+
+CREATE TABLE ingresos_clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_ingreso DATETIME DEFAULT CURRENT_TIMESTAMP,
+    cliente_id INT
+);
+
+    ALTER TABLE ingresos_clientes ADD COLUMN historial INT;
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES(DEFAULT);
+    
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2024/01/22");
+    
+    
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2024/02/22");
+    
+    
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2024/03/22");
+    
+    
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/12/22");
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/11/22");
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/09/22");
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/11/24");
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/12/28");
+
+    INSERT INTO ingresos_clientes (fecha_ingreso)
+    VALUES("2023/12/01");
+
+
+    
+  update ingresos_clientes
+  set cliente_id = id
+  where cliente_id is null;
+
+
+
+ INSERT INTO clientes(ingresos_id)
+ VALUES (cliente_id)
+ 
+    
+    
+    
+    
+    
+    
