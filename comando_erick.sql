@@ -54,6 +54,7 @@ SELECT * FROM empleado;
 SELECT * FROM empleado WHERE id = 2;
 
 
+
 /* Limita la cantidad de resultados */
 SELECT * FROM empleado WHERE id = 2 LIMIT 2;
 
