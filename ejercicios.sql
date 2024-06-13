@@ -107,6 +107,32 @@ select rating,title from Movies inner join Boxoffice  ON movies.id = boxoffice.m
 
 
 
+
+
+
+ejercicio 7-1
+Encuentre la lista de todos los edificios que tienen empleados.
+SELECT distinct building FROM employees;
+
+
+ejercicio 7-2
+Encuentra la lista de todos los edificios y su capacidad.
+SELECT * FROM Buildings ;
+
+
+ejercicio 7-3
+Enumere todos los edificios y las distintas funciones de los empleados en cada edificio (incluidos los edificios vacíos)
+select distinct building_name,role from buildings left join employees on buildings.building_name=employees.building
+
+
+
+
+
+
+
+
+
+
 /* con el primer comando distinct evita duplicados, con order by ordena los resultado y asc hace que eete orden sea alfabeticamente*/ 
 SELECT distinct director FROM movies  order by director asc ;
 
