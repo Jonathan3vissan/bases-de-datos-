@@ -72,6 +72,7 @@ UPDATE empleado SET nombre = "Estela", antiguedad = 2 WHERE nombre="Erick";
 
 ALTER TABLE empleado MODIFY nombre DATE;
 
+
 /* mysql */
 /* ALTER TABLE empleado RENAME COLUMN nombre TO fecha_ingreso DATE; */
 

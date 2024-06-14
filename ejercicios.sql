@@ -127,9 +127,12 @@ select distinct building_name,role from buildings left join employees on buildin
 
 
 
+ejercicio 8-1
+Encuentre el nombre y la función de todos los empleados que no han sido asignados a un edificio
+SELECT role,name,building FROM employees where building is null ;
 
-
-
+ejercicio 8-1
+Encuentre los nombres de los edificios que no tienen empleados.
 
 
 

@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS gimnasio;
+DROP DATABASE IF EXISTS gym;
 
 CREATE DATABASE gimnasio;
 
@@ -32,52 +32,52 @@ ADD
 
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("juan lopez", "1988/01/31", false);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("elena tevez", "2000/11/30", 1);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("lucas pelon", "1980/09/21", false);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("estabna quito", "2010/05/04", false);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("julia vega", "1997/08/07", false);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("patricia perez", "1970/12/08", true);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("malene irar", "2003/01/23", true);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("martin gersi", "2000/06/18", true);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("florencia petat", "1989/08/23", true);
 
 INSERT INTO
-    clientes (nombre, fecha_de_naciemiento, apto_fisico)
+    clientes (nombre, fecha_de_nacimiento, apto_fisico)
 VALUES
     ("gabriel flores", "2005/08/15", true);
 
