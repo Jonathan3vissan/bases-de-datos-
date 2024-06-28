@@ -134,6 +134,13 @@ SELECT role,name,building FROM employees where building is null ;
 ejercicio 8-1
 Encuentre los nombres de los edificios que no tienen empleados.
 
+SELECT DISTINCT building_name FROM buildings LEFT JOIN employees ON building_name = buildingWHERE role IS NULL;
+
+
+
+
+
+
 
 
 /* con el primer comando distinct evita duplicados, con order by ordena los resultado y asc hace que eete orden sea alfabeticamente*/ 
