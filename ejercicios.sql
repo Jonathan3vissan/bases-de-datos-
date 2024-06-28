@@ -133,12 +133,36 @@ SELECT role,name,building FROM employees where building is null ;
 
 ejercicio 8-1
 Encuentre los nombres de los edificios que no tienen empleados.
-
 SELECT DISTINCT building_name FROM buildings LEFT JOIN employees ON building_name = buildingWHERE role IS NULL;
 
 
 
+ejercicio 9-1
+Enumere todas las películas y sus ventas combinadas en millones de dólares
+SELECT title, (domestic_sales + international_sales) / 1000000 AS gross_sales_millions FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id;
 
+
+
+ejercicio 9-2
+Enumere todas las películas y sus calificaciones en porcentaje.
+select title, (rating *(100 /10)) as percentage from movies inner join boxoffice on movies.id=boxoffice.movie_id;
+
+
+ejercicio 9-3
+Enumere todas las películas que se estrenaron en años pares.
+select title, (year %2 ==0) as condition from movies where condition ;
+
+
+ejercicio 10-1
+Encuentra el tiempo más largo que un empleado ha estado en el estudio
+
+
+ejercicio 10-2
+Para cada puesto, encuentre el número promedio de años empleados por los empleados en ese puesto.
+
+
+ejercicio 10-3
+Encuentre el número total de años de empleados trabajados en cada edificio.
 
 
 
